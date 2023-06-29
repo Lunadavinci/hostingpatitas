@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas: Moro Varela Ariana Luna</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    
+    <!--VISTA INICIAL-->
+
+    <div data-vista="inicio" class="container-lg p-0">
+        <nav class="navbar navbar-light" style="background-color: #fff6dd;">
+            <div class="container-fluid">
+              <a class="navbar-brand">
+                <img src="imagenes/patitas.png" alt="Patitas">
+              </a>
+              <form class="d-flex input-group w-auto">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Search"
+                  aria-label="Search"
+                  aria-describedby="search-addon"
+                />
+                <span class="input-group-text border-0" id="search-addon">
+                    <ion-icon name="search-outline"></ion-icon>
+                </span>
+              </form>
+            </div>
+          </nav>
+
+
+                    <div class="col text-center">
+             <button type="button" class="btn btn-outline-info" id="nuevo">Crear Nota</button>
+             <button type="button" class="btn btn-outline-danger" id="eliminarTodo">Eliminar todo</button>
+            </div>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                class="bi bi-info-circle-fill" viewBox="0 0 16 16" id="info">
+                <path
+                    d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z" />
+            </svg>
+               
+        </header>
+
+        <section class="container-lg pt-3 pb-5" id="mascotas">
+             
+        </section>
+    </div>
+
+
+    <!--VISTA INGRESAR-->
+
+    <div data-vista="ingresar">
+        <header class="container-lg bg-info text-white px-2 py-3 text-center">
+
+            <h1 class="fs-5 mb-0">Ingresar mascota</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="volver" width="24" height="24" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+        </header>
+
+        <section class="container-lg py-5">
+            <form>
+                <div class="mb-3">
+                    <input type="text" placeholder="Nombre..." class="form-control" required id="nombre">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Detalles..." class="form-control" required id="detalles">
+                </div>
+                
+                <div class="mb-3">
+                    <select id= "operacion">
+                        <option value="Vacuna">Vacuna</option>
+                            <option value="Control">Control</option>
+                            <option value="Cirugia">Cirugía</option>
+                            <option value="Medicacion">Medicación</option>
+                            <option value="Otro">Otro</option>
+                            
+                    </select>
+                </div>
+                <div class="clearfix">
+                    <input type="submit" value="guardar" class="btn btn-dark float-end">
+                </div>
+            </form>
+        </section>
+    </div>
+
+
+    <!-- VISTA DATOS ALUMNA-->
+
+    <div data-vista="datos" class="container-lg p-0 bg-success-subtle">
+        <header class="container-lg bg-info text-white px-2 py-3 text-center">
+            <h1 class="fs-5 mb-0">Alumna</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="cerrar" width="24" height="24" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+              </svg>
+        </header>
+
+        <section class="container-lg py-5">
+            <figure class="text-center">
+                <img src="imagenes/Yo.jpg" alt="Bart y Milhouse" class="img-fluid">
+            </figure>
+            <ul class="list-group">
+                <li class="list-group-item bg-transparent border-success-subtle"><span class="fw-bold">Alumna:</span>
+                    <ul>
+                        <li>Ariana Luna Moro Varela</li>
+                    </ul>
+                </li>
+                <li class="list-group-item bg-transparent border-success-subtle"><span class="fw-bold">Comisión:</span> DMM3AP </li>
+                <li class="list-group-item bg-transparent border-success-subtle"><span class="fw-bold">Materia:</span> Diseño y Programación Web I</li>
+                <li class="list-group-item bg-transparent border-success-subtle"><span class="fw-bold">Docente:</span> Omar Toyos</li>
+                <li class="list-group-item bg-transparent border-success-subtle"><span class="fw-bold">Año:</span> 2023</li>
+            </ul>
+        </section>
+    </div>
+
+
+    <!--VISTA MODIFICADA-->
+
+    <div data-vista="modificar">
+        <header class="container-lg bg-info text-white px-2 py-3 text-center">
+            <h1 class="fs-5 mb-0">Modificar Nota</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" class="volver" width="24" height="24" fill="currentColor" class="bi bi-arrow-left"
+                viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
+            </svg>
+        </header>
+
+        <section class="container-lg py-5">
+            <form>
+                <div class="mb-3">
+                    <input type="text" placeholder="Nombre mascota..." class="form-control" required id="nombre_mod">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="detalles.." class="form-control" required id="detalles_mod">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Fecha..." tooltip='Fecha' class="form-control" required id="sDate_mod">
+                </div>
+                <div class="mb-3">
+                    <input type="text" placeholder="Operacion..." tooltip='Operacion' class="form-control" required id="operacion_mod">
+                </div>
+                
+
+                <div class="clearfix">
+                    <input type="submit" value="guardar cambios" class="btn btn-dark float-end">
+                </div>
+            </form>
+        </section>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+
+</html>

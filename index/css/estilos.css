@@ -1,0 +1,37 @@
+[data-vista] {
+    position: relative;
+    min-height: 100vh;
+    display: none;
+}
+
+[data-vista="inicio"] {
+    display: block;
+}
+
+#info {
+    position: absolute;
+    right: 1rem;
+    top: 1.8rem;
+    color: rgb(74, 74, 74);
+}
+
+
+.card a {
+    color: black;
+}
+
+.card a:active {
+    color: lightsalmon;
+}
+
+.volver {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.cerrar {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
